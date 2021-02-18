@@ -23,7 +23,10 @@ def is_validated_number(user_input_number):
     pass
 
 def get_not_duplicated_three_digit_number():
-    pass
+    while True:
+    n=get_random_number()
+    if not is_duplicated_number(str(n)):
+        return n
 
 
 def get_strikes_or_ball(user_input_number, random_number):
