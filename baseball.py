@@ -18,12 +18,10 @@ def is_between_100_and_999(user_input_number):
 
 def is_duplicated_number(three_digit):
 
-    for i in str(three_digit):
-        if str(three_digit).count(i) != 1:
-            return True
-
-    return False
-    
+    str_num=str(three_digit)
+    if len(set(str_num)) == 3:
+        return False
+    return True
 def is_validated_number(user_input_number):
     pass
 
@@ -85,4 +83,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
