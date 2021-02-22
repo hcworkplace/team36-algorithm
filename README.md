@@ -35,6 +35,12 @@ algorithm solving repo for team 36
 
    
 
+### 커밋 히스토리를 이쁘게 단장하자
+
+- https://evan-moon.github.io/2019/08/30/commit-history-merge-strategy/
+
+
+
 
 
 #### 과제...
