@@ -9,11 +9,12 @@ def get_random_number():
 
 
 def is_digit(user_input_number):
-    pass
+    return user_input_number.isdigit()
 
 
 def is_between_100_and_999(user_input_number):
-    pass
+    return (100 <= int(user_input_number) < 1000)
+
 
 
 def is_duplicated_number(three_digit):
