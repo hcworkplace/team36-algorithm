@@ -34,7 +34,18 @@ def get_not_duplicated_three_digit_number():
 
 
 def get_strikes_or_ball(user_input_number, random_number):
-    pass
+    result = []
+    strikes = 0
+    ball = 0
+
+    for i in range(3):
+        if user_input_number[i] == random_number[i]:
+            strikes += 1
+        elif random_number.count(user_input_number[i]):
+            ball += 1
+    
+    result = [strikes, ball]
+    return result
 
 def is_yes(one_more_input):
     pass
