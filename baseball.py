@@ -37,11 +37,14 @@ def get_strikes_or_ball(user_input_number, random_number):
     pass
 
 def is_yes(one_more_input):
-    pass
-
+    modified = one_more_input.strip().lower()
+    result = True if modified == 'y' or modified == 'yes' else False
+    return result
 
 def is_no(one_more_input):
-    pass
+    modified = one_more_input.strip().lower()
+    result = True if modified == 'n' or modified == 'no'
+    return result
 
 
 
