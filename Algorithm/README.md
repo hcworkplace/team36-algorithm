@@ -11,6 +11,7 @@
 ### ✅ <span style='color:#006dd7'>BFS/DFS</span>
 
 - [BOJ 2234번: 성곽](./solution/BOJ2234.py)
+- [BOJ 17142번: 연구소3](./solution/BOJ17142.py)
 
 
 
@@ -51,6 +52,5 @@
 ### ✅ <span style='color:#006dd7'>이분 탐색</span>
 
 - [BOJ 13711번: LCS 4](./solution/BOJ13711.py)
-
 
 
