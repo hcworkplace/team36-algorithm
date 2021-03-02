@@ -46,9 +46,9 @@ origin에서 upstream의 파일을 수정하고자 할 때, pr을 보내 upstrea
 
 - push 하기 전에
 
-  `diff`
+  `git diff`
 
-  `diff-check`
+  `git diff --check`
 
   확인하고 push하기!
 
