@@ -40,7 +40,27 @@ def bfs(board,start_loc,N):
     return chk
 
 #-------------------------------------------
+def generate_min_array(pool: list):
+    # this function compare each element of possible chk_list and select minimum value 
+    # if one element is -1 (unreachable area), min value is the other element in between 
+    # pool : list of possible virus spread simulation(chk_list)
+    min_array = [[float('inf')]*N for _ in range(N)]
+    for i in range(N):
+        for j in range(N):
+            for k, chk_list in enumerate(pool):
+                if k != 0:
+                    if min_array[i][j] != -1 and chk_list[i][j] != -1:
+                        min_array[i][j] = min(min_array[i][j], chk_list[i][j])
+                    elif min_array[i][j] != -1:
+                        continue
+                    elif chk_list[i][j] != -1:
+                        min_array[i][j] = chk_list[i][j]
+                    else:
+                        min_array[i][j] = min(min_array[i][j], chk_list[i][j]) 
 
+                min_array[i][j] = min(min_array[i][j], chk_list[i][j]) 
+
+    return min_array
 def is_all_infected(array):
     # this function checks if 2-dimensional array has element with value -1
     for i in range(len(array)):
