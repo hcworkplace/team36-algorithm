@@ -31,7 +31,6 @@ def bfs(board,start_loc,N):
 
             if nx < 0 or nx >= N: continue  
             if ny < 0 or ny >= N: continue  
-            if board[nx][ny] == '1': continue 
             if chk[nx][ny] != -1: continue  
 
             chk[nx][ny] = chk[x][y] + 1
