@@ -1,6 +1,7 @@
 #문제
 #https://www.acmicpc.net/problem/17141
 #연구실 2
+#네오
 
 from itertools import combinations
 from collections import deque
