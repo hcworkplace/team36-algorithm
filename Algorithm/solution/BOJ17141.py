@@ -54,4 +54,7 @@ for i in loc_list:
         temp.append(max(map(max, bfs(board,list(j),N))))
         res.append(min(temp))
 
-print(min(res))
+if len(res) != 0:                                                   # 가능한 경우가 있다면 그중에 가장 적게 걸린 시간 출력
+    print(min(res)) 
+else:                                                               # 다 퍼지는게 불가능하다면 -1 출력
+    print(-1)
