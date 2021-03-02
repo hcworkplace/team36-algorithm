@@ -68,15 +68,11 @@ origin에서 upstream의 파일을 수정하고자 할 때, pr을 보내 upstrea
 
   ref : https://midnightcow.tistory.com/135
 
-  
-
----
-
-- git request-pull upstream/main origin/main 했더니..
+  -> git request-pull upstream/main origin/main 했더니..
 
 ![image-20210225223134368](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210225223134368.png)
 
-​	오류남 command에서는 어떻게 pr보내는지 ㅠ
+​			오류남 command에서는 어떻게 pr보내는지 ㅠ
 
 ---
 
@@ -162,7 +158,7 @@ ref : https://evan-moon.github.io/2019/08/30/commit-history-merge-strategy/
 - 해당 레포나 특정 pr에 대해서 issue를 생성하여 토론할 수 있음
 - issue 수가 많아져서 찾기 어려울 때를 위해 Labels 사용
 
-- Milestones로 이슈들을 최대 3개의 이슈까지 그룹화하여 관리할 수 있음
+- Milestones로 최대 3개의 이슈까지 그룹화하여 관리할 수 있음
 
 ref : https://yagom.net/forums/topic/github-issue-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/
 
