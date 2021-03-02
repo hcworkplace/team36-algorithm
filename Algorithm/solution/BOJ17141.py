@@ -14,6 +14,12 @@ def bfs(board,start_loc,N):
 
     골라진 최솟값들 중에서 또 최소가 최소시간
     '''
+    # 벽이 이중으로 있는 경우 탐색이 멈춥니다
+    # 따라서 벽은 모두 0으로 초기화 하였습니다.
+    for i in range(N):
+        for j in range(N):
+            if board[i][j] == '1':
+                chk[i][j] = 0
     chk = [[-1 for i in range(N)] for j in range(N)]
     q = deque()
     q.append(start_loc) 
