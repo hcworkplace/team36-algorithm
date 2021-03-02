@@ -5,7 +5,7 @@ from collections import Counter
 
 
 def get_random_number():
-    pass
+    return random.randrange(100, 1000)
 
 
 def is_digit(user_input_number):
@@ -24,7 +24,11 @@ def is_duplicated_number(three_digit):
         return True
     return False
 def is_validated_number(user_input_number):
-    pass
+    if is_digit(user_input_number) and is_between_100_and_999(user_input_number)\
+        and not is_duplicated_number(user_input_number):
+        return True
+    
+    return False
 
 def get_not_duplicated_three_digit_number():
     while True:
