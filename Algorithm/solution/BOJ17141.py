@@ -51,8 +51,14 @@ loc_list = list(combinations(loc_list,M)) #중복되지 않은 M개의 좌표 �
 for i in loc_list:
     temp = []
     for j in i:
-        temp.append(max(map(max, bfs(board,list(j),N))))
-        res.append(min(temp))
+        temp.append(bfs(board,list(j),N))
+    
+    if not is_all_infected(generate_min_array(temp)):               # 바이러스가 다 퍼지지 않았다면 후보가 될수 없습니다.
+        continue 
+    else:
+        temp_result = max(map(max, generate_min_array(temp)))       # 시간이 표현된 2차행렬에서 최대값 뽑기
+        res.append(temp_result)                                     # 뽑은 값 res에 추가
+
 
 if len(res) != 0:                                                   # 가능한 경우가 있다면 그중에 가장 적게 걸린 시간 출력
     print(min(res)) 
