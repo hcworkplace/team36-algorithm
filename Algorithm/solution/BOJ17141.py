@@ -41,7 +41,14 @@ def bfs(board,start_loc,N):
 
 #-------------------------------------------
 
-N,M = map(int,input().split())
+def is_all_infected(array):
+    # this function checks if 2-dimensional array has element with value -1
+    for i in range(len(array)):
+        for j in range(len(array)):
+            if array[i][j] == -1:
+                return False
+    return True
+    
 board = [input().split() for j in range(N)]
 res = []
 
